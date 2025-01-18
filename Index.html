@@ -1,5 +1,53 @@
-<iframe class="game-iframe" id="gameFrame"
-src="https://classroom6x.gitlab.io/worlds-hardest-game-2/"
-style="background:black;" width="100%" height="600" 
-   scrolling="no" frameborder="0">
-   </iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Embed the World's Hardest Game 2 in your webpage with this iframe.">
+    <meta name="author" content="Your Name">
+    <title>World's Hardest Game 2</title>
+    <style>
+        /* Estilo para centrar el iframe y el fondo de la página */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Fondo negro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            overflow: hidden; /* Ocultar cualquier desbordamiento */
+        }
+
+        .iframe-container {
+            width: 100%;
+            max-width: 1200px; /* Ancho máximo del iframe */
+            height: 600px; /* Altura fija del iframe */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra alrededor del iframe */
+            border: 3px solid #fff; /* Borde blanco */
+            border-radius: 10px; /* Bordes redondeados */
+            overflow: hidden; /* Asegurar que nada sobresalga del iframe */
+        }
+
+        iframe {
+            width: 100%; /* Ancho completo del contenedor */
+            height: 100%; /* Altura completa del contenedor */
+            border: none; /* Eliminar el borde predeterminado */
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <!-- Iframe para el juego -->
+        <iframe 
+            class="game-iframe" 
+            id="gameFrame" 
+            src="https://classroom6x.gitlab.io/worlds-hardest-game-2/" 
+            scrolling="no" 
+            frameborder="0" 
+            allowfullscreen 
+            title="World's Hardest Game 2">
+        </iframe>
+    </div>
+</body>
+</html>
